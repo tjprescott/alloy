@@ -3,6 +3,7 @@ import {
   Declaration as CoreDeclaration,
   Refkey,
 } from "@alloy-js/core";
+import { createPythonSymbol } from "../symbols/index.js";
 
 export interface DeclarationProps {
   name: string;

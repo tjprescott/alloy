@@ -1,7 +1,7 @@
 import { memo, Refkey, resolve, untrack, useContext } from "@alloy-js/core";
 import { SourceFileContext } from "../components/index.js";
 import { PythonOutputScope } from "./scopes.js";
-import { PythonOutputSymbol } from "./java-output-symbol.js";
+import { PythonOutputSymbol } from "./python-output-symbol.js";
 
 /**
  * Resolve reference to symbol reference, and handle dependency management
