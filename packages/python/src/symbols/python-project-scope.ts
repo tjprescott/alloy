@@ -25,7 +25,7 @@ export interface PythonProjectScope extends OutputScope {
   addDependency(dependency: PythonDependency): string;
 }
 
-export function createJavaProjectScope(
+export function createPythonProjectScope(
   binder: Binder,
   parent: OutputScope | undefined,
   name: string,

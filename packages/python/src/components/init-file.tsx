@@ -1,8 +1,8 @@
 import { Children, SourceFile } from "@alloy-js/core";
-import { PythonPackageModel } from "./python-package.js";
+import { PythonPackageProps } from "./python-package.js";
 
 export interface InitFileModel {
-  packages?: PythonPackageModel[];
+  packages?: PythonPackageProps[];
   children?: Children;
 }
 

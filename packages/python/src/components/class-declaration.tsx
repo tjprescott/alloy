@@ -18,7 +18,7 @@ export function ClassDeclaration(props: ClassDeclarationProps) {
     <Declaration {...props} name={name}>
       class {name}{extendsExpression}:
       <Scope name={name} kind='class'>
-        {props.children}
+        {props.children ?? code`pass`}
       </Scope>
     </Declaration>
   )

@@ -3,8 +3,7 @@ import { DeclarationProps, usePackage } from "../components/index.js";
 import { PythonOutputScope } from "./scopes.js";
 
 /**
- * Represents an 'exported' symbol from a .java file. Class, enum, interface etc.
- * Not considered exported if private
+ * Represents an 'exported' symbol from a .py file. Class, enum, etc.
  */
 export interface PythonOutputSymbol extends OutputSymbol {
   /**

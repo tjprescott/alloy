@@ -1,6 +1,6 @@
 import { Children, SourceDirectory, SourceFile } from "@alloy-js/core";
 import { InitFile } from "./init-file.js";
-import { PythonPackage, PythonPackageModel } from "./python-package.js";
+import { PythonPackage, PythonPackageProps } from "./python-package.js";
 
 /**
  * A Python project is a collection of Python packages and packaging metadata.
@@ -21,7 +21,7 @@ export interface PythonProjectModel {
   name: string;
   path: string;
   version: string;
-  packages: PythonPackageModel[];
+  packages: PythonPackageProps[];
   children?: Children;
 }
 export function PythonProject({ name, path, version, packages, children }: PythonProjectModel) {

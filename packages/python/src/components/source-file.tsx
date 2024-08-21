@@ -8,6 +8,7 @@ import {
 } from "@alloy-js/core";
 import { PythonOutputSymbol } from "../symbols/index.js";
 import { ImportStatements, ImportSymbol } from "./import-statement.jsx";
+import { usePackage } from "./python-package.jsx";
 
 export interface SourceFileContext {
   addImport(symbol: OutputSymbol): string;
