@@ -15,7 +15,7 @@ export function toSourceText(c: Children): string {
       name: "test",
       modules: [
         { 
-          name: "test",
+          name: "test.py",
           children: c,
         },
       ],

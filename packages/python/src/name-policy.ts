@@ -26,5 +26,5 @@ export function createPythonNamePolicy(): NamePolicy<PythonElements> {
 }
 
 export function usePythonNamePolicy(): NamePolicy<PythonElements> {
-  return useNamePolicy();
+  return createPythonNamePolicy();
 }

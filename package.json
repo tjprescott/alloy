@@ -6,7 +6,7 @@
   "packageManager": "pnpm@9.7.0",
   "scripts": {
     "build": "pnpm -r --workspace-concurrency=Infinity build",
-    "watch": "concurrently --kill-others \"tsc -b --watch\" \"pnpm run --parallel -r watch\"",
+    "watch": "concurrently --kill-others \"pnpm exec tsc -b --watch\" \"pnpm run --parallel -r watch\"",
     "clean": "pnpm -r run clean && rimraf **/.temp/",
     "test": "vitest run",
     "format": "pnpm run prettier-exec --write",
@@ -24,6 +24,7 @@
     "concurrently": "catalog:",
     "prettier": "catalog:",
     "rimraf": "catalog:",
+    "typescript": "^5.5.4",
     "vitest": "catalog:"
   }
 }

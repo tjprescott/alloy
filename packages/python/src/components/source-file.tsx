@@ -6,9 +6,9 @@ import {
   Scope,
   SourceFile as CoreSourceFile,
 } from "@alloy-js/core";
-import { PythonOutputSymbol } from "../symbols/index.js";
-import { ImportStatements, ImportSymbol } from "./import-statement.jsx";
-import { usePackage } from "./python-package.jsx";
+import { PythonOutputSymbol, Reference } from "../index.js";
+import { ImportStatements, ImportSymbol } from "./import-statement.js";
+import { usePackage } from "./python-package.js";
 
 export interface SourceFileContext {
   addImport(symbol: OutputSymbol): string;
