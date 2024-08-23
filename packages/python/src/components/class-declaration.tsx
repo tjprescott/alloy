@@ -1,4 +1,4 @@
-import { Children, Declaration, DeclarationProps, mapJoin, render, Scope } from "@alloy-js/core";
+import { Children, Declaration, DeclarationProps, mapJoin, Scope } from "@alloy-js/core";
 import { Decorator, DecoratorProps } from "./decorator.js";
 import { usePythonNamePolicy } from "../name-policy.js";
 import { joinChildren } from "./util.js";

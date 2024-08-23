@@ -3,8 +3,9 @@ import { snakeCase, constantCase, pascalCase } from "change-case";
 
 export type PythonElements =
   | "class"
+  | "classMember"
   | "enum"
-  | "enum-member"
+  | "enumMember"
   | "function"
   | "parameter"
   | "constant"
@@ -16,7 +17,7 @@ export function createPythonNamePolicy(): NamePolicy<PythonElements> {
       case "class":
       case "enum":
         return pascalCase(name);
-      case "enum-member":
+      case "enumMember":
       case "constant":
         return constantCase(name);
       default:

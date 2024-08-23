@@ -1,4 +1,4 @@
-import { Children, code } from "@alloy-js/core";
+import { Children, join } from "@alloy-js/core";
 import { joinChildren } from "./util.js";
 
 /**
